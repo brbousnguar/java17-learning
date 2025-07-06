@@ -1,5 +1,6 @@
 package org.example;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.temporal.ChronoField;
@@ -10,5 +11,8 @@ public class Zones {
     public static void main(String[] args) {
         ZoneId zi = ZoneId.of("Europe/Paris");
         System.out.println(zi.getId());
+
+        Instant i = Instant.now();
+        System.out.println(i);
     }
 }
